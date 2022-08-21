@@ -13,14 +13,17 @@ def results(request):
     lis.append(request.GET['RI'])
     lis.append(request.GET['Na'])
     lis.append(request.GET['Mg'])
-    lis.append(request.GET['AL'])
+    lis.append(request.GET['Al'])
     lis.append(request.GET['Si'])
     lis.append(request.GET['K'])
     lis.append(request.GET['Ca'])
     lis.append(request.GET['Ba'])
     lis.append(request.GET['Fe'])
 
+
+    print(lis)
+
     ans = cls.predict([lis])
 
-    return render(request, "results.html", {'ans': ans})
+    return render(request, "results.html", {'ans': ans, 'lis': lis})
     
