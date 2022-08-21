@@ -7,9 +7,26 @@
     <title>Results</title>
 </head>
 <body>
-    Welcome to the results page.
+    <h2>Welcome to the results page.</h2>
+    <hr>
     
-    Your glass has been classified
+    <h4>Your glass has been classified</h4>
+    <hr>
+    <p>Your data input is {{lis}}</p>
+    <p>The result is {{ans}}</p> 
+    <pre>
+
+        Type of glass: (class attribute)
+        -- 1 buildingwindowsfloatprocessed
+        -- 2 buildingwindowsnonfloatprocessed 
+        -- 3 vehiclewindowsfloatprocessed
+        -- 4 vehiclewindowsnonfloatprocessed (none in this database)
+        -- 5 containers
+        -- 6 tableware
+        -- 7 headlamps
+    </pre>
+
+    <a href="{% url 'home' %}">Return</a>
 </body>
 </html>
 

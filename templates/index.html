@@ -9,25 +9,41 @@
 </head>
 
 <body>
-    Welcome to glassify
+    <h2>
+Welcome to glassify
+    </h2> 
 
     <br>
 
    <h3> FILL IN THE BELOW REQUIRED PARAMETERS </h3>
-
+ 
+<hr>
     <form action="{% url 'results' %}">
         RI <input type="text" required name="RI"> <br> <br>
-        Na <input type="text" required name="RI"> <br> <br>
-        Mg <input type="text" required name="RI"> <br> <br>
-        Al <input type="text" required name="RI"> <br> <br>
-        Si <input type="text" required name="RI"> <br> <br>
-        K <input type="text" required name="RI"> <br> <br>
-        Ca<input type="text" required name="RI"> <br> <br>
-        Ba<input type="text" required name="RI"> <br> <br>
-        Fe<input type="text" required name="RI"> <br> <br>
+        Na <input type="text" required name="Na"> <br> <br>
+        Mg <input type="text" required name="Mg"> <br> <br>
+        Al <input type="text" required name="Al"> <br> <br>
+        Si <input type="text" required name="Si"> <br> <br>
+        K <input type="text" required name="K"> <br> <br>
+        Ca<input type="text" required name="Ca"> <br> <br>
+        Ba<input type="text" required name="Ba"> <br> <br>
+        Fe<input type="text" required name="Fe"> <br> <br>
 
         <input type="submit" value="Submit">
     </form>
+
+    <pre>Attribute Information:
+    RI: refractive index
+    Na: Sodium (unit measurement: weight percent in corresponding oxide, as are attributes 4-10)
+    Mg: Magnesium
+    Al: Aluminum
+    Si: Silicon
+    K: Potassium
+    Ca: Calcium
+    Ba: Barium
+    Fe: Iron
+    </pre>
+
 </body>
 
 </html>
