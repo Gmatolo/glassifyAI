@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassify</title>
+</head>
+
+<body>
+    Welcome to glassify
+
+    <br>
+
+   <h3> FILL IN THE BELOW REQUIRED PARAMETERS </h3>
+
+    <form action="{% url 'results' %}">
+        RI <input type="text" required name="RI"> <br> <br>
+        Na <input type="text" required name="RI"> <br> <br>
+        Mg <input type="text" required name="RI"> <br> <br>
+        Al <input type="text" required name="RI"> <br> <br>
+        Si <input type="text" required name="RI"> <br> <br>
+        K <input type="text" required name="RI"> <br> <br>
+        Ca<input type="text" required name="RI"> <br> <br>
+        Ba<input type="text" required name="RI"> <br> <br>
+        Fe<input type="text" required name="RI"> <br> <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
